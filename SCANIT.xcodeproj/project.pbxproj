@@ -12,9 +12,30 @@
 		498003292344883D0019EE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498003272344883D0019EE94 /* Main.storyboard */; };
 		4980032B2344883F0019EE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4980032A2344883F0019EE94 /* Assets.xcassets */; };
 		4980032E2344883F0019EE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4980032C2344883F0019EE94 /* LaunchScreen.storyboard */; };
+		49800336234488D80019EE94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49800335234488D80019EE94 /* LoginViewController.swift */; };
+		49800338234489180019EE94 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49800337234489180019EE94 /* HomeViewController.swift */; };
+		4980033A2344A8260019EE94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 498003392344A8260019EE94 /* GoogleService-Info.plist */; };
+		4980033C234ADAA00019EE94 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980033B234ADAA00019EE94 /* CardListViewController.swift */; };
+		4980034C234B42390019EE94 /* ask_bill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980033D234B42250019EE94 /* ask_bill.mp3 */; };
+		4980034D234B42390019EE94 /* english_menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980033E234B42300019EE94 /* english_menu.mp3 */; };
+		4980034E234B42390019EE94 /* separate_bills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980033F234B42300019EE94 /* separate_bills.mp3 */; };
+		4980034F234B42390019EE94 /* qr_payment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800340234B42310019EE94 /* qr_payment.mp3 */; };
+		49800350234B42390019EE94 /* gluten_free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800341234B42320019EE94 /* gluten_free.mp3 */; };
+		49800351234B42390019EE94 /* grill_more.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800342234B42320019EE94 /* grill_more.mp3 */; };
+		49800352234B42390019EE94 /* halal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800343234B42330019EE94 /* halal.mp3 */; };
+		49800353234B42390019EE94 /* reduce_dish_size.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800344234B42340019EE94 /* reduce_dish_size.mp3 */; };
+		49800354234B42390019EE94 /* not_spicy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800345234B42340019EE94 /* not_spicy.mp3 */; };
+		49800355234B42390019EE94 /* credit_card.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800346234B42350019EE94 /* credit_card.mp3 */; };
+		49800356234B42390019EE94 /* tapwater_naturalwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800347234B42360019EE94 /* tapwater_naturalwater.mp3 */; };
+		49800357234B42390019EE94 /* toilet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800348234B42360019EE94 /* toilet.mp3 */; };
+		49800358234B42390019EE94 /* cigarette.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49800349234B42370019EE94 /* cigarette.mp3 */; };
+		49800359234B42390019EE94 /* another_one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980034A234B42380019EE94 /* another_one.mp3 */; };
+		4980035A234B42390019EE94 /* vegetarian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980034B234B42380019EE94 /* vegetarian.mp3 */; };
+		FA0E7CFA1854B0EC9CE3720A /* Pods_SCANIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E91A3FA2DAD260675EF0142 /* Pods_SCANIT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E91A3FA2DAD260675EF0142 /* Pods_SCANIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCANIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498003202344883D0019EE94 /* SCANIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCANIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		498003232344883D0019EE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		498003252344883D0019EE94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +43,27 @@
 		4980032A2344883F0019EE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4980032D2344883F0019EE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4980032F2344883F0019EE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49800335234488D80019EE94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		49800337234489180019EE94 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		498003392344A8260019EE94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4980033B234ADAA00019EE94 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		4980033D234B42250019EE94 /* ask_bill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ask_bill.mp3; sourceTree = "<group>"; };
+		4980033E234B42300019EE94 /* english_menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = english_menu.mp3; sourceTree = "<group>"; };
+		4980033F234B42300019EE94 /* separate_bills.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = separate_bills.mp3; sourceTree = "<group>"; };
+		49800340234B42310019EE94 /* qr_payment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = qr_payment.mp3; sourceTree = "<group>"; };
+		49800341234B42320019EE94 /* gluten_free.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gluten_free.mp3; sourceTree = "<group>"; };
+		49800342234B42320019EE94 /* grill_more.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grill_more.mp3; sourceTree = "<group>"; };
+		49800343234B42330019EE94 /* halal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = halal.mp3; sourceTree = "<group>"; };
+		49800344234B42340019EE94 /* reduce_dish_size.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reduce_dish_size.mp3; sourceTree = "<group>"; };
+		49800345234B42340019EE94 /* not_spicy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = not_spicy.mp3; sourceTree = "<group>"; };
+		49800346234B42350019EE94 /* credit_card.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = credit_card.mp3; sourceTree = "<group>"; };
+		49800347234B42360019EE94 /* tapwater_naturalwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapwater_naturalwater.mp3; sourceTree = "<group>"; };
+		49800348234B42360019EE94 /* toilet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toilet.mp3; sourceTree = "<group>"; };
+		49800349234B42370019EE94 /* cigarette.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cigarette.mp3; sourceTree = "<group>"; };
+		4980034A234B42380019EE94 /* another_one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = another_one.mp3; sourceTree = "<group>"; };
+		4980034B234B42380019EE94 /* vegetarian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vegetarian.mp3; sourceTree = "<group>"; };
+		7476F7A41611BC7A3CBDD22E /* Pods-SCANIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCANIT.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCANIT/Pods-SCANIT.release.xcconfig"; sourceTree = "<group>"; };
+		C0D1B80257FE9E9F26C4A31D /* Pods-SCANIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCANIT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCANIT/Pods-SCANIT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0E7CFA1854B0EC9CE3720A /* Pods_SCANIT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA59FDEAB650A8DEE2D7558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0D1B80257FE9E9F26C4A31D /* Pods-SCANIT.debug.xcconfig */,
+				7476F7A41611BC7A3CBDD22E /* Pods-SCANIT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		498003172344883D0019EE94 = {
 			isa = PBXGroup;
 			children = (
 				498003222344883D0019EE94 /* SCANIT */,
 				498003212344883D0019EE94 /* Products */,
+				2CA59FDEAB650A8DEE2D7558 /* Pods */,
+				8B827B7189B4D4FB07A88F52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +108,41 @@
 		498003222344883D0019EE94 /* SCANIT */ = {
 			isa = PBXGroup;
 			children = (
+				498003392344A8260019EE94 /* GoogleService-Info.plist */,
 				498003232344883D0019EE94 /* AppDelegate.swift */,
 				498003252344883D0019EE94 /* ViewController.swift */,
 				498003272344883D0019EE94 /* Main.storyboard */,
 				4980032A2344883F0019EE94 /* Assets.xcassets */,
 				4980032C2344883F0019EE94 /* LaunchScreen.storyboard */,
 				4980032F2344883F0019EE94 /* Info.plist */,
+				49800335234488D80019EE94 /* LoginViewController.swift */,
+				49800337234489180019EE94 /* HomeViewController.swift */,
+				4980033B234ADAA00019EE94 /* CardListViewController.swift */,
+				4980034A234B42380019EE94 /* another_one.mp3 */,
+				4980033D234B42250019EE94 /* ask_bill.mp3 */,
+				49800349234B42370019EE94 /* cigarette.mp3 */,
+				49800346234B42350019EE94 /* credit_card.mp3 */,
+				4980033E234B42300019EE94 /* english_menu.mp3 */,
+				49800341234B42320019EE94 /* gluten_free.mp3 */,
+				49800342234B42320019EE94 /* grill_more.mp3 */,
+				49800343234B42330019EE94 /* halal.mp3 */,
+				49800345234B42340019EE94 /* not_spicy.mp3 */,
+				49800340234B42310019EE94 /* qr_payment.mp3 */,
+				49800344234B42340019EE94 /* reduce_dish_size.mp3 */,
+				4980033F234B42300019EE94 /* separate_bills.mp3 */,
+				49800347234B42360019EE94 /* tapwater_naturalwater.mp3 */,
+				49800348234B42360019EE94 /* toilet.mp3 */,
+				4980034B234B42380019EE94 /* vegetarian.mp3 */,
 			);
 			path = SCANIT;
+			sourceTree = "<group>";
+		};
+		8B827B7189B4D4FB07A88F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E91A3FA2DAD260675EF0142 /* Pods_SCANIT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 498003322344883F0019EE94 /* Build configuration list for PBXNativeTarget "SCANIT" */;
 			buildPhases = (
+				F8DCF33948795CA55BFE3457 /* [CP] Check Pods Manifest.lock */,
 				4980031C2344883D0019EE94 /* Sources */,
 				4980031D2344883D0019EE94 /* Frameworks */,
 				4980031E2344883D0019EE94 /* Resources */,
+				9FA7123E0487E63840DEBB1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +206,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				4980032E2344883F0019EE94 /* LaunchScreen.storyboard in Resources */,
+				4980033A2344A8260019EE94 /* GoogleService-Info.plist in Resources */,
+				49800354234B42390019EE94 /* not_spicy.mp3 in Resources */,
+				49800351234B42390019EE94 /* grill_more.mp3 in Resources */,
+				4980034D234B42390019EE94 /* english_menu.mp3 in Resources */,
+				49800356234B42390019EE94 /* tapwater_naturalwater.mp3 in Resources */,
 				4980032B2344883F0019EE94 /* Assets.xcassets in Resources */,
+				4980034F234B42390019EE94 /* qr_payment.mp3 in Resources */,
+				49800358234B42390019EE94 /* cigarette.mp3 in Resources */,
+				49800350234B42390019EE94 /* gluten_free.mp3 in Resources */,
+				49800357234B42390019EE94 /* toilet.mp3 in Resources */,
+				49800353234B42390019EE94 /* reduce_dish_size.mp3 in Resources */,
 				498003292344883D0019EE94 /* Main.storyboard in Resources */,
+				4980034E234B42390019EE94 /* separate_bills.mp3 in Resources */,
+				49800355234B42390019EE94 /* credit_card.mp3 in Resources */,
+				49800359234B42390019EE94 /* another_one.mp3 in Resources */,
+				4980034C234B42390019EE94 /* ask_bill.mp3 in Resources */,
+				4980035A234B42390019EE94 /* vegetarian.mp3 in Resources */,
+				49800352234B42390019EE94 /* halal.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FA7123E0487E63840DEBB1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SCANIT/Pods-SCANIT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCANIT/Pods-SCANIT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DCF33948795CA55BFE3457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCANIT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4980031C2344883D0019EE94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49800336234488D80019EE94 /* LoginViewController.swift in Sources */,
 				498003262344883D0019EE94 /* ViewController.swift in Sources */,
 				498003242344883D0019EE94 /* AppDelegate.swift in Sources */,
+				49800338234489180019EE94 /* HomeViewController.swift in Sources */,
+				4980033C234ADAA00019EE94 /* CardListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +425,7 @@
 		};
 		498003332344883F0019EE94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D1B80257FE9E9F26C4A31D /* Pods-SCANIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +443,7 @@
 		};
 		498003342344883F0019EE94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7476F7A41611BC7A3CBDD22E /* Pods-SCANIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
