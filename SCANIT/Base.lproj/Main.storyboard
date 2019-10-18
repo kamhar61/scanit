@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SyW-wj-eIw">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SyW-wj-eIw">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,38 +28,29 @@
             <objects>
                 <viewController storyboardIdentifier="Home" id="SyW-wj-eIw" customClass="ViewController" customModule="SCANIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQI-EU-0IW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64x-NI-CRg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64x-NI-CRg">
                                 <rect key="frame" x="227" y="0.0" width="148" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logoutBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="rA2-uV-qiy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-Qd-CJh">
-                                <rect key="frame" x="0.0" y="201" width="185" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-Qd-CJh">
+                                <rect key="frame" x="0.0" y="181" width="167" height="256"/>
                                 <state key="normal" title="While eating" backgroundImage="while_eating"/>
                                 <connections>
                                     <action selector="whileEatingBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="sGc-4c-X8P"/>
                                     <segue destination="Ynz-Iy-r1E" kind="show" identifier="whileEatingSegue" id="3UL-Yp-vvi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTy-yz-KE2">
-                                <rect key="frame" x="188" y="201" width="192" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bill" backgroundImage="bill"/>
-                                <connections>
-                                    <action selector="billBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="umj-oy-iSk"/>
-                                    <segue destination="Ynz-Iy-r1E" kind="show" identifier="billSegue" id="s1F-OG-hlY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXy-d8-jP6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXy-d8-jP6">
                                 <rect key="frame" x="188" y="71" width="187" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="cpb-0S-LhU"/>
+                                </constraints>
                                 <state key="normal" title="Order " backgroundImage="order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -70,45 +59,91 @@
                                     <segue destination="Ynz-Iy-r1E" kind="show" identifier="orderSegue" id="jCK-D4-kXn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-x1-9HJ">
-                                <rect key="frame" x="188" y="333" width="187" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-x1-9HJ">
+                                <rect key="frame" x="188" y="333" width="187" height="187.00000000000003"/>
                                 <state key="normal" title="Set your uneatable foods" backgroundImage="uneatable_foods"/>
                                 <connections>
                                     <action selector="uneatableBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="AL6-WR-Lrz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf1-Lb-a8a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf1-Lb-a8a">
                                 <rect key="frame" x="0.0" y="332" width="185" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="LYW-6R-DU0"/>
+                                </constraints>
                                 <state key="normal" title="Bathroom" backgroundImage="bathroom"/>
                                 <connections>
                                     <action selector="bathroomBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="xb4-D0-ftS"/>
                                     <segue destination="Ynz-Iy-r1E" kind="show" identifier="bathroomSegue" id="4SZ-tq-Il4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dad-hG-gKk">
-                                <rect key="frame" x="0.0" y="463" width="380" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dad-hG-gKk">
+                                <rect key="frame" x="0.0" y="463" width="380" height="111"/>
                                 <state key="normal" title="Free" backgroundImage="while_eating"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUy-8G-Bf1">
-                                <rect key="frame" x="0.0" y="596" width="380" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUy-8G-Bf1">
+                                <rect key="frame" x="0.0" y="576" width="380" height="131"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="hrP-pa-zWe"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBt-m5-dXG">
-                                <rect key="frame" x="16" y="68" width="152" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBt-m5-dXG">
+                                <rect key="frame" x="0.0" y="48" width="167" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="9Ak-0z-usK"/>
+                                    <constraint firstAttribute="width" constant="167" id="W1o-O3-9mz"/>
+                                </constraints>
                                 <state key="normal" title="Before entering" backgroundImage="before_entering_shop"/>
                                 <connections>
                                     <action selector="beforeEnteringBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="n1f-uK-ROf"/>
                                     <segue destination="Ynz-Iy-r1E" kind="show" identifier="beforeEnteringSegue" id="6oP-bn-whu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTy-yz-KE2">
+                                <rect key="frame" x="188" y="194" width="187" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="Dqw-Pa-qai"/>
+                                </constraints>
+                                <state key="normal" title="Bill" backgroundImage="bill"/>
+                                <connections>
+                                    <action selector="billBtn:" destination="SyW-wj-eIw" eventType="touchUpInside" id="umj-oy-iSk"/>
+                                    <segue destination="Ynz-Iy-r1E" kind="show" identifier="billSegue" id="s1F-OG-hlY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bJl-x1-9HJ" firstAttribute="leading" secondItem="Gf1-Lb-a8a" secondAttribute="trailing" constant="3" id="9ED-dy-Qew"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="trailing" secondItem="64x-NI-CRg" secondAttribute="trailing" id="AGb-s5-rdE"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="top" secondItem="EQI-EU-0IW" secondAttribute="top" constant="71" id="E5O-wM-Kre"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="leading" secondItem="aUy-8G-Bf1" secondAttribute="leading" id="Gii-Lv-mXT"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="leading" secondItem="bJl-x1-9HJ" secondAttribute="leading" id="IMu-76-9Z2"/>
+                            <constraint firstItem="bgc-Qd-CJh" firstAttribute="leading" secondItem="AQY-Sx-ha5" secondAttribute="leading" id="Jwh-mM-rGk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aUy-8G-Bf1" secondAttribute="trailing" constant="-21" id="WcJ-AE-XdP"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="leading" secondItem="Gf1-Lb-a8a" secondAttribute="leading" id="WdB-GW-5aw"/>
+                            <constraint firstItem="Gf1-Lb-a8a" firstAttribute="top" secondItem="EQI-EU-0IW" secondAttribute="top" constant="332" id="XbI-A6-TlG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aUy-8G-Bf1" secondAttribute="bottom" constant="-60" id="YIW-GH-VHY"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="leading" secondItem="AQY-Sx-ha5" secondAttribute="leading" id="Yb0-OI-sWj"/>
+                            <constraint firstItem="bJl-x1-9HJ" firstAttribute="top" secondItem="kTy-yz-KE2" secondAttribute="bottom" constant="8" symbolic="YES" id="aaE-a9-MNb"/>
+                            <constraint firstItem="aUy-8G-Bf1" firstAttribute="trailing" secondItem="dad-hG-gKk" secondAttribute="trailing" id="apT-FN-fvP"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="trailing" secondItem="AQY-Sx-ha5" secondAttribute="trailing" id="dK0-eN-gWC"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="trailing" secondItem="bgc-Qd-CJh" secondAttribute="trailing" id="ec2-kk-FvQ"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="leading" secondItem="bBt-m5-dXG" secondAttribute="trailing" constant="21" id="ejd-Fz-HTa"/>
+                            <constraint firstItem="aUy-8G-Bf1" firstAttribute="top" secondItem="dad-hG-gKk" secondAttribute="bottom" constant="2" id="ffq-Aq-lbv"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="leading" secondItem="bBt-m5-dXG" secondAttribute="trailing" constant="21" id="g2Z-jd-o0u"/>
+                            <constraint firstItem="kTy-yz-KE2" firstAttribute="leading" secondItem="bgc-Qd-CJh" secondAttribute="trailing" constant="21" id="imy-RG-72T"/>
+                            <constraint firstItem="kTy-yz-KE2" firstAttribute="top" secondItem="EQI-EU-0IW" secondAttribute="top" constant="194" id="jIc-VQ-An1"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="top" secondItem="64x-NI-CRg" secondAttribute="bottom" constant="1" id="lKM-Nl-qbi"/>
+                            <constraint firstItem="dad-hG-gKk" firstAttribute="top" secondItem="Gf1-Lb-a8a" secondAttribute="bottom" id="mli-3M-gcc"/>
+                            <constraint firstAttribute="trailing" secondItem="kTy-yz-KE2" secondAttribute="trailing" id="nTd-OX-Qfx"/>
+                            <constraint firstItem="VXy-d8-jP6" firstAttribute="trailing" secondItem="bJl-x1-9HJ" secondAttribute="trailing" id="tBd-nd-lBQ"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="leading" secondItem="dad-hG-gKk" secondAttribute="leading" id="vQx-EM-LuE"/>
+                            <constraint firstItem="bBt-m5-dXG" firstAttribute="top" secondItem="AQY-Sx-ha5" secondAttribute="top" constant="48" id="yLO-M8-3rh"/>
+                            <constraint firstItem="kTy-yz-KE2" firstAttribute="leading" secondItem="bgc-Qd-CJh" secondAttribute="trailing" constant="21" id="yak-Tv-BEo"/>
+                            <constraint firstItem="bgc-Qd-CJh" firstAttribute="top" secondItem="bBt-m5-dXG" secondAttribute="bottom" id="zUf-O2-diz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AQY-Sx-ha5"/>
                     </view>
                 </viewController>
@@ -129,25 +164,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fkf-83-YwE">
-                                <rect key="frame" x="37.5" y="100" width="300" height="30"/>
+                                <rect key="frame" x="37.5" y="80" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="fDb-Tg-70D"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password(over 6words)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2EI-T7-QoH">
-                                <rect key="frame" x="37.5" y="140" width="300" height="30"/>
+                                <rect key="frame" x="37.5" y="124" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Tb0-fm-u7v"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEX-8k-dJr">
-                                <rect key="frame" x="37" y="180" width="300" height="34"/>
+                                <rect key="frame" x="37.5" y="168" width="300" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="NFO-FR-mtm"/>
@@ -158,7 +191,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-in-cUW">
-                                <rect key="frame" x="37" y="224" width="300" height="34"/>
+                                <rect key="frame" x="37.5" y="212" width="300" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Hxq-V0-4dw"/>
@@ -196,22 +229,22 @@
             <objects>
                 <viewController storyboardIdentifier="CardList" id="Ynz-Iy-r1E" customClass="CardListViewController" customModule="SCANIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38W-aC-gUP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="halal" translatesAutoresizingMaskIntoConstraints="NO" id="dcu-Az-WpG">
                                 <rect key="frame" x="67" y="80" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English                                             &quot;Do you have  vegetarian menu?&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-oW-Zkb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English                                             &quot;Do you have  halal menu?&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-oW-Zkb">
                                 <rect key="frame" x="67" y="210" width="240" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese                                           &quot;ベジタリアン向けのメニューはありますか？&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KRC-pB-ZDz">
-                                <rect key="frame" x="67" y="271" width="240" height="66.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese                                           &quot;ハラル向けのメニューはありますか？&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KRC-pB-ZDz">
+                                <rect key="frame" x="68" y="271" width="238" height="66.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -231,7 +264,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCm-ox-u9h">
-                                <rect key="frame" x="142" y="246" width="42" height="56"/>
+                                <rect key="frame" x="143" y="261" width="31" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="sound_mark"/>
                                 <connections>
@@ -239,26 +272,178 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Gp-Wt-2ix">
-                                <rect key="frame" x="67" y="496" width="240" height="128"/>
+                                <rect key="frame" x="67" y="496" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Do you have a vegetarian menu?&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uzd-3Q-yip">
+                                <rect key="frame" x="67" y="526" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wPP-oi-V1l">
+                                <rect key="frame" x="67" y="567" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;ベジタリアン向けのメニューはありますか？&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yrh-xU-WbS">
+                                <rect key="frame" x="67" y="596" width="240" height="49.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-d0-Gj4">
+                                <rect key="frame" x="143" y="567" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="sound_mark"/>
+                                <connections>
+                                    <action selector="soundVegetarianBtn:" destination="Ynz-Iy-r1E" eventType="touchUpInside" id="boF-G3-kmZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gluten_free" translatesAutoresizingMaskIntoConstraints="NO" id="Lqi-Dt-xEF">
+                                <rect key="frame" x="67" y="687" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U3B-7W-rOd">
+                                <rect key="frame" x="67" y="834" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Do you have a gluten-free manu?&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-TI-oew">
+                                <rect key="frame" x="67" y="863" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bib-yo-Ysf">
+                                <rect key="frame" x="67" y="895" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;グルテンフリー(小麦・米などの穀物を使っていない)メニューはありますか？&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EW1-90-sTV">
+                                <rect key="frame" x="67" y="929" width="240" height="66.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeX-Le-bAO">
+                                <rect key="frame" x="143" y="896" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="sound_mark"/>
+                                <connections>
+                                    <action selector="soundGlutenBtn:" destination="Ynz-Iy-r1E" eventType="touchUpInside" id="qsZ-hT-kgc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="credit" translatesAutoresizingMaskIntoConstraints="NO" id="tay-gu-QD3">
+                                <rect key="frame" x="67" y="1039" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Iv-YY-YRc">
+                                <rect key="frame" x="67" y="1191" width="240" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Can I use a credit card?&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-k3-QTH">
+                                <rect key="frame" x="67" y="1226" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-qU-9Qj">
+                                <rect key="frame" x="67" y="1267" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;クレジットカードは使えますか？&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-WY-udC">
+                                <rect key="frame" x="67" y="1308" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gv-XW-V6m">
+                                <rect key="frame" x="143" y="1267" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="sound_mark"/>
+                                <connections>
+                                    <action selector="soundCreditBtn:" destination="Ynz-Iy-r1E" eventType="touchUpInside" id="99u-Bl-qI0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sound_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-dp-iix">
+                                <rect key="frame" x="67" y="1394" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="English " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-Ed-9YH">
+                                <rect key="frame" x="67" y="1530" width="240" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Can I use QR code payment (Alipay, Wechat Pay)&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yPu-TJ-h08">
+                                <rect key="frame" x="67" y="1565" width="240" height="49.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Japanese" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-B7-pCY">
+                                <rect key="frame" x="67" y="1622" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;QRコード決済(アリペイ、ウィーチャットペイ)はできますか？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DjM-K6-lMp">
+                                <rect key="frame" x="67" y="1655" width="240" height="49.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xx-IJ-jcB">
+                                <rect key="frame" x="143" y="1622" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="sound_mark"/>
+                                <connections>
+                                    <action selector="soundQrBtn:" destination="Ynz-Iy-r1E" eventType="touchUpInside" id="Yf6-IG-1UZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xGc-CT-SvL"/>
                     </view>
+                    <size key="freeformSize" width="375" height="4000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZt-f3-ql8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112.8000000000002" y="129.98500749625188"/>
+            <point key="canvasLocation" x="2112.8000000000002" y="129.53523238380811"/>
         </scene>
     </scenes>
     <resources>
         <image name="bathroom" width="1569" height="872"/>
         <image name="before_entering_shop" width="256" height="256"/>
         <image name="bill" width="256" height="256"/>
+        <image name="credit" width="1460" height="903"/>
+        <image name="gluten_free" width="1207" height="742"/>
         <image name="halal" width="1048" height="630"/>
         <image name="order" width="256" height="256"/>
         <image name="sound_mark" width="256" height="256"/>
